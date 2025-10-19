@@ -1,4 +1,3 @@
-````markdown
 # 🐱 Profile + Cat Fact API
 
 A simple Node.js + Express REST API that returns your profile information and a random cat fact 🐾.  
@@ -153,6 +152,3 @@ This API fulfills the following task requirements:
 
 If you’d like to see my process and experience with this task, I’ll be posting a write-up soon on **Twitter** with screenshots and details.
 
-```
-
----
