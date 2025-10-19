@@ -10,7 +10,7 @@ const app = express();
 // Load environment variables
 const PORT = process.env.PORT || 3000;
 const EMAIL = process.env.USER_EMAIL || "abdulsomadsaid05@gmail.com";
-const FULL_NAME = process.env.USER_NAME || "Somad said";
+const FULL_NAME = process.env.USER_NAME || "Your Full Name";
 const STACK = process.env.USER_STACK || "Node.js/Express";
 const CATFACT_URL = "https://catfact.ninja/fact";
 
@@ -52,6 +52,8 @@ app.get("/health", (req, res) => {
 });
 
 // start server
-app.listen(PORT, () => {
-  console.log(`✅ Server running on http://localhost:${PORT}`);
+const port = process.env.PORT || 8080;
+
+app.listen(port, "0.0.0.0", () => {
+  console.log(`✅ Server running on port ${port}`);
 });
